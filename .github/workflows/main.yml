@@ -44,10 +44,18 @@ jobs:
     - name: statuc
       run: git config -l
 
-    - name: Push public to branch
+    - name: Push 1
       run: |
           git config --global user.name 'DuiNaru'
+    - name: Push 2
+      run: |
           git config --global user.email 'DuiNaru@users.noreply.github.com'
+    - name: Push 3
+      run: |
           git subtree split --branch public --prefix public/
+    - name: Push 4
+      run: |
           git push -f origin public:public
+    - name: Push 5
+      run: |
           git branch -D public
