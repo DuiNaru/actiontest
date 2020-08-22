@@ -44,6 +44,9 @@ jobs:
     - name: statuc
       run: git config -l
 
+    - name: add
+      run: git add .
+            
     - name: Push 1
       run: |
           git config --global user.name 'DuiNaru'
