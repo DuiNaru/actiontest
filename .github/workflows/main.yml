@@ -46,13 +46,6 @@ jobs:
 
     - name: add
       run: git add .
-            
-    - name: Push 1
-      run: |
-          git config --global user.name 'DuiNaru'
-    - name: Push 2
-      run: |
-          git config --global user.email 'DuiNaru@users.noreply.github.com'
           
 
     - name: commit
