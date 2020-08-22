@@ -29,7 +29,11 @@ jobs:
         # extended: true
       
     - name: Build hugo
-      run: touch public/test.md
+      run: |
+          mkdir public
+          cd public
+          touch public.md
+           
       
     - name: ls
       run: ls
