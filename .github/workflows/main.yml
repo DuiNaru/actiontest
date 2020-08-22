@@ -46,9 +46,6 @@ jobs:
 
     - name: add
       run: git add .
-
-    - name: commit
-      run: git commit -m "test"
             
     - name: Push 1
       run: |
@@ -56,6 +53,11 @@ jobs:
     - name: Push 2
       run: |
           git config --global user.email 'DuiNaru@users.noreply.github.com'
+          
+
+    - name: commit
+      run: git commit -m "test"
+      
     - name: Push 3
       run: |
           git subtree split --branch public --prefix public/
