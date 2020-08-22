@@ -38,6 +38,9 @@ jobs:
     - name: ls
       run: ls
       
+    - name: ls public
+      run: ls public
+      
     - name: statuc
       run: git config -l
 
