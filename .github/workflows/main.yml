@@ -46,6 +46,9 @@ jobs:
 
     - name: add
       run: git add .
+
+    - name: commit
+      run: git commit -m "test"
             
     - name: Push 1
       run: |
